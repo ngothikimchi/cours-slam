@@ -1,0 +1,284 @@
+body
+{
+    /* background: linear-gradient(0deg, rgba(159,154,235,1) 0%, rgba(139,236,246,1) 38%, rgb(118, 185, 240) 73%); */
+    background-color: rgb(140, 165, 236);
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 80px;
+    padding: 30px;
+
+}
+
+/* STYLE FOR HEADER */
+header img {
+    height: 80px;
+    margin-left: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header nav ul li a img {
+    height: 40px;
+    margin-left: 10px;
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 5px 0 rgb(94, 93, 93);
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: black;
+    text-decoration: none;
+}
+/***********************************************/
+
+/* STYLE FOR TEXTBOX AND BUTTON */
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=reset] {
+    width: 20%;
+    background-color: #fd0707;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+/***********************************************/
+
+.bloc_syntaxe_simple{
+    width: 90%;
+    margin-left:auto;
+    margin-right: auto;
+    height:300px;
+    /* background-color: brown; */
+}
+.bloc_syntaxe_simple1{
+    width: 90%;
+    margin-left:auto;
+    margin-right: auto;
+    height:420px;
+    /* background-color: brown; */
+}
+.blocs{
+    width:31%;
+    height:100%;
+    float:left;
+    background-color: rgb(218, 227, 228);
+    margin-right:2%;
+}
+.header_syntax{
+    margin-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size:20px;
+    text-decoration: underline;
+    margin-left: 3%;
+
+}
+.definition{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: 3%;
+    width:85%;
+    text-align: left;
+}
+.content_syntaxe{
+    text-align: left;
+    margin-top: 2%;
+    font-size: 20px;
+    margin-left: 3%;   
+}
+.italic{
+    font-style: italic;
+}
+.bloc_example{
+    margin-top: 3%;
+    font-size: 20px;
+}
+.ex{
+    text-align: left;
+    text-decoration: underline;
+    margin-left: 2%;
+}
+.bloc_syntaxe_double{
+    width: 85%;
+    margin-left:auto;
+    margin-right: auto;
+    height:420px;
+    /* background-color: brown; */
+}
+.bloc_syntaxe_multi{
+    width:85%;
+    margin-left:auto;
+    margin-right: auto;
+    height:600px;
+    /* background-color: brown; */
+}
+.illustration{
+    width:85%;
+    margin-left:auto;
+    margin-right: auto;
+    height:150%;  
+    /* background-color: pink; */
+    margin-top: 5%;
+}
+.sujet{
+    font-size: 20px;
+    text-align: left;
+    font-weight: bolder;
+    margin-bottom: 1%;
+}
+.sujet_algo{
+    text-align: left;
+    font-size: 18px;
+}
+.click_haut{
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding:2px 3px;
+    font-size: 18px;
+    border-radius: 5%;
+}
+
+/* Code block styling */
+ol.linenums{
+    counter-reset:linenumber;
+}
+ol.linenums li{
+    list-style-type:none;
+    counter-increment:linenumber;
+}
+ol.linenums li:before{
+    content: counter(linenumber);
+    float:left;
+    margin-left:-4em;
+    text-align:right;
+    width:3em;
+}
+
+
+code{
+    display: block;
+}
+.exemple_rouge{
+    color:red;
+}
+  
+/**********************************************************************/
+/* Pretty printing styles. Used with prettify.js. */
+pre .str, code .str { color: #65B042; } /* string  - green */
+pre .kwd, code .kwd { color: #E28964; } /* keyword - dark pink */
+pre .com, code .com { color: #AEAEAE; font-style: italic; } /* comment - gray */
+pre .typ, code .typ { color: #89bdff; } /* type - light blue */
+pre .lit, code .lit { color: #3387CC; } /* literal - blue */
+pre .pun, code .pun { color: #fff; } /* punctuation - white */
+pre .pln, code .pln { color: #fff; } /* plaintext - white */
+pre .tag, code .tag { color: #89bdff; } /* html/xml tag    - light blue */
+pre .atn, code .atn { color: #bdb76b; } /* html/xml attribute name  - khaki */
+pre .atv, code .atv { color: #65B042; } /* html/xml attribute value - green */
+pre .dec, code .dec { color: #3387CC; } /* decimal - blue */
+
+code.prettyprint {
+	background-color:#020209;
+	border-radius:3px;
+	padding:0.2em; 
+	margin:0.2em;
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+pre.prettyprint {
+	background-color: #020209;
+	border-radius: 8px;
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	width: 95%;
+	max-height: 400px;
+	margin: 10px auto; 
+	white-space: pre-wrap;
+	padding: 20px !important;
+	overflow: hidden;
+	overflow-style:auto;
+	overflow-y:hidden;
+	overflow-x:hidden;
+	font-size:16px;
+	
+}
+
+/*Hover effect for prettyprint code block*/
+pre.prettyprint:hover {
+	overflow: auto;
+	overflow-style:auto;
+}
+
+/*Selection effect for prettyprint code block*/
+pre.prettyprint ::selection {
+	background: #0000FF;
+	color: #FFF;
+}
+
+/*Selection effect for prettyprint code block in Mozilla*/
+pre.prettyprint ::-moz-selection{
+	background: #0000FF;
+	color: #FFF;
+}
+
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #666666; } /* IE indents via margin-left */
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: decimal !important; }
+/* Alternate shading for lines */
+li.L1,li.L3,li.L5,li.L7,li.L9 {
+background-color: #020209 !important; }
+
+@media print {
+  pre .str, code .str { color: #060; }
+  pre .kwd, code .kwd { color: #006; font-weight: bold; }
+  pre .com, code .com { color: #600; font-style: italic; }
+  pre .typ, code .typ { color: #404; font-weight: bold; }
+  pre .lit, code .lit { color: #044; }
+  pre .pun, code .pun { color: #440; }
+  pre .pln, code .pln { color: #000; }
+  pre .tag, code .tag { color: #006; font-weight: bold; }
+  pre .atn, code .atn { color: #404; }
+  pre .atv, code .atv { color: #060; }
+}
+/**********************************************************************/
