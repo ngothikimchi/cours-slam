@@ -1,13 +1,15 @@
 body
 {
     /* background: linear-gradient(0deg, rgba(159,154,235,1) 0%, rgba(139,236,246,1) 38%, rgb(118, 185, 240) 73%); */
-    background-color: rgb(140, 165, 236);
+    background-color: rgb(252, 213, 206); 
     background-size: cover;
     font-family: sans-serif;
     margin-top: 80px;
-    padding: 30px;
+    padding-top: 30px; 
+    
 
 }
+
 
 /* STYLE FOR HEADER */
 header img {
@@ -49,9 +51,10 @@ header li a {
 /***********************************************/
 
 /* STYLE FOR TEXTBOX AND BUTTON */
+
 input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
+    width: 30%;
+    padding: 8px 12px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -60,30 +63,41 @@ input[type=text], select {
 }
 
 input[type=submit] {
-    width: 20%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
+    width: 12%;
+    background-color: rgb(255, 215, 186);
+    color: black;
+    padding: 8px 12px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family:'Lora', serif;
+    font-size: 15px;
 }
 input[type=reset] {
-    width: 20%;
-    background-color: #fd0707;
-    color: white;
-    padding: 14px 20px;
+    width: 12%;
+    background-color:rgb(254, 197, 187);
+    color: black;
+    padding: 8px 12px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family:'Lora', serif;
+    font-size: 15px;
 }
 
 input[type=submit]:hover {
     background-color: #45a049;
 }
 /***********************************************/
+.body_container{
+    width:70%;
+    margin-right:auto ;
+    margin-left: auto;
+    height: fit-content;
+    background-color:rgb(216, 226, 220);
+}
 
 .bloc_syntaxe_simple{
     width: 90%;
@@ -101,32 +115,36 @@ input[type=submit]:hover {
 }
 .blocs{
     width:31%;
-    height:100%;
+    /* height:100%; */
+    height:fit-content;
     float:left;
-    background-color: rgb(218, 227, 228);
+    background-color: rgb(248, 237, 235);
     margin-right:2%;
 }
 .header_syntax{
     margin-top: 2%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Moul', cursive;
     font-weight: bolder;
-    font-size:20px;
-    text-decoration: underline;
+    font-size:18px;
+    /* text-decoration: underline; */
     margin-left: 3%;
 
 }
 .definition{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-family: 'Rouge Script', cursive;
+    font-size: 18px;
     margin-bottom: 3%;
     width:85%;
     text-align: left;
+    margin-left: auto;
+    margin-right: auto;
 }
 .content_syntaxe{
     text-align: left;
     margin-top: 2%;
-    font-size: 20px;
-    margin-left: 3%;   
+    font-size: 15px;
+    margin-left: 3%; 
+    font-family: 'Rouge Script', cursive;  
 }
 .italic{
     font-style: italic;
@@ -137,8 +155,10 @@ input[type=submit]:hover {
 }
 .ex{
     text-align: left;
-    text-decoration: underline;
+    font-weight: bolder;
     margin-left: 2%;
+    font-family: 'Rouge Script', cursive;
+    font-size: 18px;
 }
 .bloc_syntaxe_double{
     width: 85%;
@@ -282,3 +302,73 @@ background-color: #020209 !important; }
   pre .atv, code .atv { color: #060; }
 }
 /**********************************************************************/
+
+
+
+.font_h1{
+    font-family: 'Concert One', cursive;
+}
+.font_h2{
+    font-family: 'Pacifico', cursive;
+}
+.font3{
+    font-family: 'Taviraj', serif;
+}
+/* HEADER */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/* html {
+  height:100%;
+  background-image: linear-gradient(to right top, #8e44ad 0%, #3498db 100%);
+}
+ */
+nav {
+  max-width: 960px;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding: 60px 0;
+  
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: 'Dancing Script', cursive;
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  font-weight: bolder;
+  
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7);
+  font-weight:400px;
+}
+
+.color_header{
+    background-color: rgb(255, 237, 221);
+}
+.taille_logo{
+    width:160px;
+    height:140px;
+
+}
+.font_label{
+    font-family:'Inconsolata', monospace; ;
+    font-size: 15px;
+}

@@ -1,10 +1,11 @@
 
 <center>
-<h1>Cours sur les alternatives</h1>
+<h1 class="font_h1">Cours sur les alternatives</h1>
 </center>
 
 <!-- PARTIE ALTERNATIVE SIMPLE -->
-<h2>1. L'alternative simple</h2>
+<div class="body_container">
+<h2 class="font_h2">1. L'alternative simple</h2>
 <div class="definition">L'alternative simple permet d'exécuter une ou plusieurs instructions si 
 une condition est vérifiée. Dans le cas contraire, le bloc d'instructions est simplement sauté. <br>
 La condition peut être simple ou composée à l'aide des opérateurs logiques : et (&&) , ou (||) et non (!).  
@@ -14,8 +15,8 @@ La condition peut être simple ou composée à l'aide des opérateurs logiques :
     <div class="blocs">
         <div class="header_syntax">Syntaxe en Algorithme</div>
         <div class="content_syntaxe">
-            Si <span class="italic">condition</span> <br>
-            &nbsp;&nbsp;&nbsp;Alors <span class="italic">instruction</span> <br>
+            Si <span class="italic exemple_rouge">condition</span> <br>
+            &nbsp;&nbsp;&nbsp;Alors <span class="italic exemple_rouge">instruction</span> <br>
             Finsi <br>
         </div>  
         <div class="bloc_example">
@@ -30,9 +31,9 @@ La condition peut être simple ou composée à l'aide des opérateurs logiques :
     <div class="blocs">
         <div class="header_syntax">Syntaxe en C</div>
         <div class="content_syntaxe">
-            If <span class="italic">(condition)</span> <br>
+            If <span class="italic exemple_rouge">(condition)</span> <br>
             &nbsp;&nbsp;{<br>
-            &nbsp;&nbsp;&nbsp;Instruction;<br>
+            &nbsp;&nbsp;&nbsp;<span class="italic exemple_rouge">instructions;</span><br>
             &nbsp;&nbsp;}<br>
         </div>
         <div class="bloc_example">
@@ -50,9 +51,9 @@ La condition peut être simple ou composée à l'aide des opérateurs logiques :
     <div class="blocs">
         <div class="header_syntax">Syntaxe en PHP</div>
         <div class="content_syntaxe">
-            If <span class="italic">(condition)</span> <br>
+            If <span class="italic exemple_rouge">(condition)</span> <br>
             &nbsp;&nbsp;{<br>
-            &nbsp;&nbsp;&nbsp;Instruction;<br>
+            &nbsp;&nbsp;&nbsp;<span class="italic exemple_rouge">instructions;</span><br>
             &nbsp;&nbsp;}<br>
         </div>
         <div class="bloc_example">
@@ -67,7 +68,7 @@ La condition peut être simple ou composée à l'aide des opérateurs logiques :
     </div>   
 </div>
 <!-- PARTIE ALTERNATIVE double -->
-<h2>2. L'alternative double</h2>
+<h2 class="font_h2">2. L'alternative double</h2>
 <div class="definition">L'alternative double exécute l'une des deux conditions selon la vérification de la condition. 
 On dit qu'il y a une exclusion mutuelle : soit l'une qui est exécutée soit l'autre instruction qui est exécutée, 
 jamais les deux à la fois, et elles ne seront pas sautées les deux à la fois.    
@@ -145,7 +146,7 @@ jamais les deux à la fois, et elles ne seront pas sautées les deux à la fois.
 </div>
 
 <!-- LE CHOIX multiple -->
-<h2>3. Le choix multi</h2>
+<h2 class="font_h2">3. Le choix multi</h2>
 <div class="definition">Le selon n'est autre la représentation d'une manière plus lisible et visible 
     d'une cascade (imbrication) des alternatives. Une meilleure présentation. <br>
 L'expression doit être en C de type énuméré : int , char.  
@@ -237,11 +238,11 @@ L'expression doit être en C de type énuméré : int , char.
 
 <!-- BLOC EXAMPLE 1 -->
 <div class="illustration">
-<div class="sujet">
-    <span class="italic">Exercice 1:</span> Ecrire un algo et un programme PHP qui saisie un nombre entier et affiche s'il est pair ou impair.  
+<div class="sujet font3">
+    <span class="italic font_h1">Exercice 1:</span> Ecrire un algo et un programme PHP qui saisie un nombre entier et affiche s'il est pair ou impair.  
 </div>
 <!-- BLOC ALGO EXO 1 -->
-<div class="sujet">Algorithme</div>
+<div class="sujet font3">Algorithme</div>
 <div class="sujet_algo">
     <pre>
         <code class="prettyprint">
@@ -260,7 +261,7 @@ Fin Exo1
     </pre>
 </div>
 <!-- BLOC LANGAGE C EXO1 -->
-<div class="sujet">Traduction en langage C</div>
+<div class="sujet font3">Traduction en langage C</div>
 
 <div class="sujet_algo">
     <pre>
@@ -285,9 +286,9 @@ return 0;
 
 
 <!-- BLOC CODE PHP EXO 1 -->
-<div class="sujet">Demo en PHP</div>
+<div class="sujet font3">Demo en PHP</div>
 <form method="post">
-<label  for="nb">Nombre</label>
+<label  class="font_label" for="nb">Nombre</label>
 <input type="text" name="nb" value="<?php if (isset($_POST['nb'])) echo $_POST['nb']; ?>"> 
 <br/> 
 <input type="reset" name="Annuler" value="Annuler"> 
@@ -308,12 +309,12 @@ if (isset($_POST["calculer_pair_impaire"]))
 <!-- BLOC EXEMPLE 2 -->
 
 <div class="illustration">
-    <div class="sujet">
-        <span class="italic">Exercice 2:</span> Ecrire un algo, C, et PHP qui permet de résoudre dans R l'équation du premier  
+    <div class="sujet font3">
+        <span class="italic font_h1">Exercice 2:</span> Ecrire un algo, C, et PHP qui permet de résoudre dans R l'équation du premier  
     degré a*x + b = 0  
     </div>
 <!-- BLOC ALGO EXO2 -->
-    <div class="sujet">Algorithme</div>
+    <div class="sujet font3">Algorithme</div>
     <div class="sujet_algo">
         <pre>
             <code class="prettyprint">
@@ -339,7 +340,7 @@ Finsi
     </div>
 
 <!-- BLOC LANGAGE C EXO2 -->
-<div class="sujet">Traduction en langage C</div>
+<div class="sujet font3">Traduction en langage C</div>
     <div class="sujet_algo">
     <pre>
         <code class="prettyprint">
@@ -370,12 +371,12 @@ return 0;
 
 
 <!-- BLOC CODE PHP EXO2 -->
-<div class="sujet">Demo en PHP</div>
+<div class="sujet font3">Demo en PHP</div>
 <form method ="post">
-    <label for="a">Le premier coef</label>
-    <input type="text" name ="a" value="<?php if (isset($_POST['a'])) echo $_POST['a']; ?>"/>
-    <label for="a">Le deuxieme coef</label>
-    <input type="text" name ="b" value="<?php if (isset($_POST['b'])) echo $_POST['b']; ?>"/>
+    <label class="font_label" for="a">Le premier coef</label>
+    <input type="text" name ="a" value="<?php if (isset($_POST['a'])) echo $_POST['a']; ?>"/><br>
+    <label class="font_label" for="a">Le deuxieme coef</label>
+    <input type="text" name ="b" value="<?php if (isset($_POST['b'])) echo $_POST['b']; ?>"/><br>
     <input type="reset" name="annuler" value="Annuler"/> 
     <input type="submit" name="calculer_exo2" value="Calculer"/> 
 </form> 
@@ -407,11 +408,11 @@ return 0;
 
 <!-- BLOC EXEMPLE 3 -->
 <div class="illustration">
-    <div class="sujet">
-        <span class="italic">Exercice 3:</span> Ecrire un algo / C /PHP qui permet de résoudre dans R l'équation du second degré : a*x2 + b*x +c = 0  
+    <div class="sujet font3">
+        <span class="italic font_h1">Exercice 3:</span> Ecrire un algo / C /PHP qui permet de résoudre dans R l'équation du second degré : a*x2 + b*x +c = 0  
     </div>
 <!-- BLOC ALGO EXEMPLE 3 -->
-    <div class="sujet">Algorithme</div>
+    <div class="sujet font3">Algorithme</div>
     <div class="sujet_algo">
         <pre>
             <code class="prettyprint">
@@ -456,7 +457,7 @@ FIN
 
 
     <!-- BLOC LANGAGE EXEMPLE 3 -->
-    <div class="sujet">Traduction en C</div>
+    <div class="sujet font3">Traduction en C</div>
     <div class="sujet_algo">
     <pre>
         <code class="prettyprint">
@@ -522,14 +523,14 @@ int main () {
 
 
 <!-- BLOC PHP EXEMPLE 3 -->
-<div class="sujet">Demo en PHP</div>
+<div class="sujet font3">Demo en PHP</div>
 <form method ="post">  
-    <label for="a">Le premier coef</label>
-    <input type="text" name ="a" value="<?php if (isset($_POST['a'])) echo $_POST['a']; ?>" />  
-    <label for="b">Le deuxieme coef</label>
-    <input type="text" name ="b" value="<?php if (isset($_POST['b'])) echo $_POST['b']; ?>" />  
-    <label for="c">Le troisieme coef</label>
-    <input type="text" name ="c" value="<?php if (isset($_POST['c'])) echo $_POST['c']; ?>" />
+    <label class="font_label" for="a">Le premier coef</label>
+    <input type="text" name ="a" value="<?php if (isset($_POST['a'])) echo $_POST['a']; ?>" />  <br>
+    <label class="font_label" for="b">Le deuxieme coef</label>
+    <input type="text" name ="b" value="<?php if (isset($_POST['b'])) echo $_POST['b']; ?>" />  <br>
+    <label class="font_label" for="c">Le troisieme coef</label>
+    <input type="text" name ="c" value="<?php if (isset($_POST['c'])) echo $_POST['c']; ?>" /> <br>
     <input type="reset" name="annuler" value="Annuler"/>
     <input type="submit" name="calculer1" value="Calculer"/>
 </form>  
@@ -589,8 +590,8 @@ if (isset($_POST["calculer1"]))
 
 <!-- BLOC EXEMPLE 4 -->
 <div class="illustration">
-    <div class="sujet">
-        <span class="italic">Exercice 4:</span> L'entrée au cinéma est calculée selon un tarif de base, auquel on applique une remise selon les jours et l'âge de la personne.<br> 
+    <div class="sujet font3">
+        <span class="italic font_h1">Exercice 4:</span> L'entrée au cinéma est calculée selon un tarif de base, auquel on applique une remise selon les jours et l'âge de la personne.<br> 
  Tous les mercredis et samedis, on applique 20 % pour les jeunes de moins de 35 ans, et 10 % pour les personnes entre 35 et 50 ans et aucune remise pour les autres.  
  Les dimanches c'est gratuit aux enfants de moins de 15 ans et 40 % pour les personnes entre 15 et 18 ans. Et le tarif de base pour les autres.<br>
  Les mardis et lundis: on applique  une remise de 25 % pour les personnes de plus de 60 ans. <br>
@@ -598,7 +599,7 @@ if (isset($_POST["calculer1"]))
  Ecrire un algo / C / PHP qui permet de saisir le tarif de base, le numéro du jour et l'âge de la personne et affiche le tarif à payer.<br>
     </div>
     <!-- BLOC ALGO EXEMPLE 4 -->
-    <div class="sujet">Algorithme</div>
+    <div class="sujet font3">Algorithme</div>
     <div class="sujet_algo">
         <pre>
             <code class="prettyprint">
@@ -609,8 +610,10 @@ P,t: reel
 Debut  
     Afficher (“Le tarif de base”) 
     Saisir (t) 
-    Afficher (« Consider que le lundi est numero 1, le mardi est numero 2, le mercredi est numero 3, 
-    le jeudi est numero 4, le vendredi est numero 5, le samedi est numero 6, le dimanche est numero 7” ) 
+    Afficher (« Consider que le lundi est numero 1,
+    le mardi est numero 2, le mercredi est numero 3, 
+    le jeudi est numero 4, le vendredi est numero 5,
+    le samedi est numero 6, le dimanche est numero 7” ) 
     Afficher (“donner le numero de jour”) 
     Saisir (j) 
     Afficher (“Donner l’age”) 
@@ -648,7 +651,7 @@ Fin cinema
 
 
     <!-- BLOC LANGAGE C EXEMPLE 4 -->
-    <div class="sujet">Traduction en C</div>
+    <div class="sujet font3">Traduction en C</div>
     <div class="sujet_algo">
         <pre>
             <code class="prettyprint">
@@ -723,12 +726,12 @@ int main () {
         </pre>
     </div>
  <!-- BLOC LANGAGE PHP EXEMPLE 4 -->
-<div class="sujet">Demo en PHP</div>
+<div class="sujet font3">Demo en PHP</div>
 <form method="post">
-    <label for="age">Age de la personne</label>
+    <label class="font_label" for="age">Age de la personne</label>
     <input type="text" name="age" value="<?php if (isset($_POST['age'])) echo $_POST['age']; ?>">
     <br/>
-    <label for="jour">Jour</label>
+    <label class="font_label" for="jour">Jour</label>
     <select name ="jour" id="jour">
         <option value ="1" <?php echo (isset($_POST['jour']) && $_POST['jour'] == '1') ? 'selected="selected"' : ''; ?>> lundi </option>
         <option value ="2" <?php echo (isset($_POST['jour']) && $_POST['jour'] == '2') ? 'selected="selected"' : ''; ?>> mardi </option>
@@ -739,7 +742,7 @@ int main () {
         <option value ="7" <?php echo (isset($_POST['jour']) && $_POST['jour'] == '7') ? 'selected="selected"' : ''; ?>> dimanche </option>
     </select>
     <br/>
-    <label for="tarif">Tarif de base </label>
+    <label class="font_label" for="tarif">Tarif de base </label>
     <input type="text" name="tarif" value="<?php if (isset($_POST['tarif'])) echo $_POST['tarif']; ?>"><br/>
     <input type="reset" name="Annuler" value="Annuler">
     <input type="submit" name="calculer_ex4" value="Calculer">
@@ -789,12 +792,19 @@ if (isset($_POST["calculer_ex4"])) {
 }    
 ?>
 </div>
+</div>
 
 <center>
     <button class="click_haut" onclick="scrollToTop()"> 
     Cliquez pour faire défiler vers le haut
     </button> 
 </center>
+<br>
+
+
+
+
+
 
 
 

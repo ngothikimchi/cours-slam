@@ -1,10 +1,11 @@
 <center>    
-    <h1>Cours sur les Boucles</h1>
+    <h1 class="font_h1">Cours sur les Boucles</h1>
 </center>
 
 <!-- PARTIE LA BOUCLE TANT QUE -->
-       <h2>1.   La boucle tant que </h2>
-
+       
+<div class="body_container">
+<h2 class="font_h2">1.   La boucle tant que </h2>
 <div class="definition">La boucle « tant que » exécute une ou plusieurs instructions jusqu'à ce
 que la condition ne soit plus vérifiée. Si au départ la condition n'est pas vérifiée, aucune exécution 
 du bloc d'instructions n'a lieu. Le nombre d'itérations peut ne pas être connu à l'avance.  <br>
@@ -15,18 +16,18 @@ Dans le corps de la boucle, il faut prévoir une instruction qui fera évoluer l
     <div class="blocs">
         <div class="header_syntax">Syntaxe en Algorithme</div>
         <div class="content_syntaxe">
-            Tant que <span class="italic"> condition</span> faire <br>
-            &nbsp;&nbsp;&nbsp;<span class="italic">instruction</span> <br>
+            Tant que <span class="italic exemple_rouge"> condition</span> faire <br>
+            &nbsp;&nbsp;&nbsp;<span class="italic exemple_rouge">instruction</span> <br>
             Fin tantque <br>
         </div>  
         <div class="bloc_example">
-            <div class="ex">Exemple:</div>
+            <div class="ex">Exemple</div>
             <div class="content_syntaxe">
             Afficher les nombres pairs de 2 à 20. <br> 
-            nb<-2&nbsp;&nbsp;<span class="exemple_rouge">[initialisation]</span><br>
+            nb <-2&nbsp;&nbsp;<span class="exemple_rouge">[initialisation]</span><br>
             tant que nb <= 20 faire&nbsp;&nbsp; <span class="exemple_rouge">[condition]</span><br> 
-            &nbsp;&nbsp;&nbsp;afficher("nombre pair :",nb)&nbsp;&nbsp;<span class="exemple_rouge"> [instruction] </span><br>
-            &nbsp;&nbsp;&nbsp;nb<-nb+2&nbsp;&nbsp; <span class="exemple_rouge"> [évolution] </span><br>
+            &nbsp;&nbsp;&nbsp;afficher(" nombre pair:",nb)&nbsp;&nbsp;<span class="exemple_rouge"> [instruction] </span><br>
+            &nbsp;&nbsp;&nbsp;nb <- nb+2&nbsp;&nbsp; <span class="exemple_rouge"> [évolution] </span><br>
             fin tant que<br>
             </div>            
         </div>
@@ -35,16 +36,16 @@ Dans le corps de la boucle, il faut prévoir une instruction qui fera évoluer l
     <div class="blocs">
         <div class="header_syntax">Syntaxe en C</div>
         <div class="content_syntaxe">
-            while <span class="italic">(condition)</span>{<br>
+            while <span class="italic exemple_rouge">(condition)</span><br>{<br>
             &nbsp;&nbsp;&nbsp;Instruction;<br>
             }<br>
         </div>
         <div class="bloc_example">
-            <div class="ex">Traduction en C:</div>
+            <div class="ex">Traduction en C</div>
             <div class="content_syntaxe">
             nb=2; <br>
-            while (nb<=20){<br>
-            &nbsp;&nbsp;&nbsp;printf("Nombre pair :%d", nb);<br>
+            while (nb <= 20)<br>{<br>
+            &nbsp;&nbsp;&nbsp;printf("Nombre pair:%d", nb);<br>
             &nbsp;&nbsp;&nbsp;nb = nb + 2;<br>
             }<br>
             </div>
@@ -52,18 +53,18 @@ Dans le corps de la boucle, il faut prévoir une instruction qui fera évoluer l
     </div>
 
     <div class="blocs">
-        <div class="header_syntax">Syntaxe en php</div>
+        <div class="header_syntax">Syntaxe en PHP</div>
         <div class="content_syntaxe">
-            while <span class="italic">(condition)</span>{<br>
+            while <span class="italic exemple_rouge">(condition)</span><br>{<br>
             &nbsp;&nbsp;&nbsp;Instruction;<br>
             }<br>
         </div>
         <div class="bloc_example">
-            <div class="ex">Traduction en php:</div>
+            <div class="ex">Traduction en PHP</div>
             <div class="content_syntaxe">
             nb=2; <br>
-            while ($nb<=20){<br>
-            &nbsp;&nbsp;&nbsp;printf("Nombre pair :%d", $nb);<br>
+            while ($nb <= 20)<br>{<br>
+            &nbsp;&nbsp;&nbsp;printf("Nombre pair:%d", $nb);<br>
             &nbsp;&nbsp;&nbsp;$nb = $nb + 2;<br>
             }<br>
             </div>
@@ -71,7 +72,7 @@ Dans le corps de la boucle, il faut prévoir une instruction qui fera évoluer l
     </div>
         </div>
 <!-- PARTIE LA BOUCLE FAIRE TANT QUE -->
-<h2>2.   La boucle faire tant que </h2>
+<h2 class="font_h2">2.   La boucle faire tant que </h2>
 
 <div class="definition">Le nombre d'itérations peut ne pas être connu à l'avance.  <br>
  
@@ -85,8 +86,8 @@ Et il faut insérer dans le corps de la boucle une instruction d'évolution de l
         <div class="header_syntax">Syntaxe en Algorithme</div>
         <div class="content_syntaxe">
             faire<br>
-            &nbsp;&nbsp;&nbsp;instructions<br>
-            tant que<span class="italic">condition</span> <br>
+            &nbsp;&nbsp;&nbsp;<span class="italic exemple_rouge" >instructions</span><br>
+            tant que&nbsp;<span class="italic exemple_rouge">condition</span> <br>
         </div>  
         <div class="bloc_example">
             <div class="ex">Exemple:</div>
@@ -104,20 +105,20 @@ Et il faut insérer dans le corps de la boucle une instruction d'évolution de l
     <div class="blocs">
         <div class="header_syntax">Syntaxe en C</div>
         <div class="content_syntaxe">
-            do{ <br>
-            &nbsp;&nbsp;&nbsp;instructions<br>
+            do { <br>
+            &nbsp;&nbsp;&nbsp;<span class="exemple_rouge">[instruction]</span><br>
             }
-            while <span class="italic">(condition)</span><br>;
+            while <span class="italic exemple_rouge">(condition)</span><br>;
         </div>
         <div class="bloc_example">
             <div class="ex">Traduction en C:</div>
             <div class="content_syntaxe">
             nb=2; <br>
-            do{<br>
+            do {<br>
             &nbsp;&nbsp;&nbsp;printf("Nombre pair :%d", nb);<br>
             &nbsp;&nbsp;&nbsp;nb = nb + 2;<br>
             }<br>
-            while (nb<=20);
+            while (nb <= 20);
             </div>
         </div>
     </div>
@@ -125,26 +126,26 @@ Et il faut insérer dans le corps de la boucle une instruction d'évolution de l
     <div class="blocs">
         <div class="header_syntax">Syntaxe en php</div>
         <div class="content_syntaxe">
-            do{ <br>
-            &nbsp;&nbsp;&nbsp;instructions<br>
+            do { <br>
+            &nbsp;&nbsp;&nbsp;<span class="exemple_rouge">[instruction]</span><br>
             }
-            while <span class="italic">(condition)</span><br>;
+            while <span class="italic exemple_rouge">(condition)</span><br>;
         </div>
         <div class="bloc_example">
             <div class="ex">Traduction en php:</div>
             <div class="content_syntaxe">
             $nb=2; <br>
-            do{<br>
+            do {<br>
             &nbsp;&nbsp;&nbsp;printf("Nombre pair :%d", $nb);<br>
             &nbsp;&nbsp;&nbsp;$nb = $nb + 2;<br>
             }<br>
-            while ($nb<=20);
+            while ($nb <= 20);
             </div>
         </div>
     </div>
 </div>
 <!-- PARTIE LA BOUCLE POUR -->
-<h2>3.   La boucle pour </h2>
+<h2 class="font_h2">3. La boucle pour </h2>
 
 <div class="definition">La boucle pour est une boucle déterministe qui permet d'exécuter un bloc d'instruction un nombre de fois connu à l'avance calculé par les valeurs VD et VF et le PAS.  <br>
 remarque<br>
@@ -159,11 +160,11 @@ PAS : incrémentation ou décrémentation (par défaut, le pas est égal à 1 ou
         <div class="header_syntax">Syntaxe en Algorithme</div>
         <div class="content_syntaxe">
             Pour variable allant de VD à VF pas de PAS faire<br>
-            &nbsp;&nbsp;&nbsp;instructions<br>
-            Fin pour<span class="italic">condition</span> <br>
+            &nbsp;&nbsp;&nbsp;<span class="exemple_rouge">[instruction]</span><br>
+            Fin pour&nbsp;<span class="italic exemple_rouge">condition</span> <br>
         </div>  
         <div class="bloc_example">
-            <div class="ex">Exemple:</div>
+            <div class="ex">Exemple</div>
             <div class="content_syntaxe">
             Afficher les nombres pairs de 2 à 20. <br> 
             pour nb allant de 2 à 20 pas de 2 faire&nbsp;&nbsp;<span class="exemple_rouge">[init,cond,evol]</span><br>
@@ -176,15 +177,15 @@ PAS : incrémentation ou décrémentation (par défaut, le pas est égal à 1 ou
     <div class="blocs">
         <div class="header_syntax">Syntaxe en C</div>
         <div class="content_syntaxe">
-            for ( <span class="italic">(initialisation; condition; évolution)</span> ) { <br>
-            &nbsp;&nbsp;&nbsp;instructions;<br>
+            for ( <span class="">initialisation; condition; évolution</span> ) { <br>
+            &nbsp;&nbsp;&nbsp;<span class="exemple_rouge">instruction;</span><br>
             }
-            while <span class="italic">(condition)</span><br>;
+            while <span class="italic exemple_rouge">(condition)</span><br>;
         </div>
         <div class="bloc_example">
-            <div class="ex">Traduction en C:</div>
+            <div class="ex">Traduction en C</div>
             <div class="content_syntaxe">
-            for(nb=2; nb<=20; nb=nb+2{<br>
+            for(nb=2; nb<=20; nb=nb+2)<br>{<br>
             &nbsp;&nbsp;&nbsp;printf("Nombre pair :%d", nb);<br>
             }<br>
             </div>
@@ -192,17 +193,17 @@ PAS : incrémentation ou décrémentation (par défaut, le pas est égal à 1 ou
     </div>
 
     <div class="blocs">
-        <div class="header_syntax">Syntaxe en php</div>
+        <div class="header_syntax">Syntaxe en PHP</div>
         <div class="content_syntaxe">
-            for ( <span class="italic">(initialisation; condition; évolution)</span> ) { <br>
-            &nbsp;&nbsp;&nbsp;instructions;<br>
+            for ( <span class="example_rouge">initialisation; condition; évolution</span> ) { <br>
+            &nbsp;&nbsp;&nbsp;<span class="exemple_rouge">instruction;</span><br>
             }
-            while <span class="italic">(condition)</span><br>;
+            while <span class="italic exemple_rouge">(condition)</span><br>;
         </div>
         <div class="bloc_example">
-            <div class="ex">Traduction en php:</div>
+            <div class="ex">Traduction en PHP</div>
             <div class="content_syntaxe">
-            for($nb=2; $nb<=20; $nb=$nb+2{<br>
+            for($nb=2; $nb<=20; $nb=$nb+2)<br>{<br>
             &nbsp;&nbsp;&nbsp;printf("Nombre pair :%d", $nb);<br>
             }<br>
             </div>
@@ -213,11 +214,11 @@ PAS : incrémentation ou décrémentation (par défaut, le pas est égal à 1 ou
 <!-- EXEMPLES -->
 <!-- BLOC EXEMPLE 1 -->
 <div class="illustration">
-<div class="sujet">
-    <span class="italic">Exercice 1:</span> Ecrire un algo qui permet d’additionner tous les nombres compris entre deux limites entières. Le traduire en C et en PHP 
+<div class="sujet font3">
+    <span class="italic font_h1">Exercice 1:&nbsp;</span> Ecrire un algo qui permet d’additionner tous les nombres compris entre deux limites entières. Le traduire en C et en PHP 
 </div>
 <!-- BLOC ALGO EXO 1 -->
-<div class="sujet">Algorithme</div>
+<div class="sujet font3">Algorithme</div>
 <div class="sujet_algo">
     <pre>
         <code class="prettyprint">
@@ -240,7 +241,7 @@ Fin exo1
     </pre>
 </div>
 <!-- BLOC LANGAGE C EXO1 -->
-<div class="sujet">Traduction en langage C</div>
+<div class="sujet font3">Traduction en langage C</div>
 
 <div class="sujet_algo">
     <pre>
@@ -268,12 +269,12 @@ int main () {
     </pre>
 </div>
 <!-- BLOC CODE PHP EXO 1 -->
-<div class="sujet">Demo en PHP</div>
+<div class="sujet font3">Demo en PHP</div>
 <form method="post"> 
-Limite 1 : <input type="text" name="lim1">  
+<span class="font_label">Limite 1 :</span> <input type="text" name="lim1">  
  
   
-    Limite 2 : <input type="text" name="lim2">  
+<span class="font_label">Limite 2 :</span><input type="text" name="lim2">  
     <br/>  
     <input type="reset" name="Annuler" value="Annuler">  
     <input type="submit" name="calculer" value="Calculer">  
@@ -299,15 +300,15 @@ Limite 1 : <input type="text" name="lim1">
 <!-- BLOC EXEMPLE 2 -->
 
 <div class="illustration">
-    <div class="sujet">
-        <span class="italic">Exercice 2:</span> Ecrire un algo, prog C et dev PHP qui permet de saisir un nombre entier et d'afficher ses diviseurs.  <br>
+    <div class="sujet font3">
+        <span class="italic font_h1">Exercice 2:</span> Ecrire un algo, prog C et dev PHP qui permet de saisir un nombre entier et d'afficher ses diviseurs.  <br>
         Exemple : nb = 10 les diviseurs de 10 sont : 1, 2, 5, 10.  <br>
         Utilisez l'opérateur modulo : % 
 
     degré a*x + b = 0  
     </div>
 <!-- BLOC ALGO EXO2 -->
-    <div class="sujet">Algorithme</div>
+    <div class="sujet font3">Algorithme</div>
     <div class="sujet_algo">
         <pre>
             <code class="prettyprint">
@@ -328,7 +329,7 @@ Fin exo2
         </pre>
     </div>
 <!-- BLOC LANGAGE C EXO2 -->
-    <div class="sujet">Traduction en langage C</div>
+    <div class="sujet font3 ">Traduction en langage C</div>
     <div class="sujet_algo">
     <pre>
         <code class="prettyprint">
@@ -354,10 +355,10 @@ return 0;
     </pre>
 </div>
 <!-- BLOC CODE PHP EXO2 -->
-<div class="sujet">Demo en PHP</div>
+<div class="sujet font3">Demo en PHP</div>
 
     <form method ="post"> 
-    Nombre  : <input type="text" name="nb">  
+    <span class="font_label">Nombre :</span><input type="text" name="nb">  
       
     <input type="submit" name="rechercher" value="Rechercher">  
     </form>  
@@ -383,11 +384,11 @@ return 0;
 
 <!-- BLOC EXEMPLE 3 -->
 <div class="illustration">
-    <div class="sujet">
-        <span class="italic">Exercice 3:</span> Ecrire un algo / C / PHP qui permet de saisir un nombre entier et une limite et affiche la table de multiplication d’un nombre jusqu'à la limite fixée par l'utilisateur 
+    <div class="sujet font3">
+        <span class="italic font_h1">Exercice 3:</span> Ecrire un algo / C / PHP qui permet de saisir un nombre entier et une limite et affiche la table de multiplication d’un nombre jusqu'à la limite fixée par l'utilisateur 
     </div>
 <!-- BLOC ALGO EXO3 -->
-    <div class="sujet">Algorithme</div>
+    <div class="sujet font3">Algorithme</div>
     <div class="sujet_algo">
         <pre>
             <code class="prettyprint">
@@ -410,7 +411,7 @@ Fin exo3
     </div>
 
     <!-- BLOC LANGAGE C EXO3 -->
-    <div class="sujet">Traduction en C</div>
+    <div class="sujet font3">Traduction en C</div>
     <div class="sujet_algo">
     <pre>
         <code class="prettyprint">
@@ -440,11 +441,11 @@ return 0;
 
 
 <!-- BLOC PHP EXEMPLE 3 -->
-<div class="sujet">Demo en PHP</div>
+<div class="sujet font3">Demo en PHP</div>
 
     <form method ="post"> 
-    Le premier nombre: <input type="text" name ="nb1"/> 
-    Le deuxieme nombre: <input type="text" name ="nb2"/>
+    <span class="font_label">Le premier nombre: </span><input type="text" name ="nb1"/> <br>
+    <span class="font_label">Le deuxieme nombre:  </span><input type="text" name ="nb2"/><br>
 
     
     <input type="reset" name="annuler" value="Annuler"/> 
@@ -470,14 +471,14 @@ for($i=1;$i<=$nb2;$i++)
 
 <!-- BLOC EXEMPLE 4 -->
 <div class="illustration">
-    <div class="sujet">
-        <span class="italic">Exercice 4:</span> Exo 4 : Ecrire un algo / C /php qui permet de saisir un nombre et de vérifier si celui-ci est un nombre parfait. Un nombre est dit parfait s'il est égal à la somme de ses diviseurs sauf lui-même.  <br>
+    <div class="sujet font3">
+        <span class="italic font_h1">Exercice 4:</span>&nbsp;Ecrire un algo / C /PHP qui permet de saisir un nombre et de vérifier si celui-ci est un nombre parfait. Un nombre est dit parfait s'il est égal à la somme de ses diviseurs sauf lui-même.  <br>
 Le nombre 28 est parfait : 1+ 2+4+7+14 = 28  <br>
 Le nombre 6 : 1+2+3 =  6  
 
     </div>
     <!-- BLOC ALGO EXEMPLE 4 -->
-    <div class="sujet">Algorithme</div>
+    <div class="sujet font3">Algorithme</div>
     <div class="sujet_algo">
         <pre>
             <code class="prettyprint">
@@ -504,7 +505,7 @@ FIn parfait
         </pre>
     </div>  
     <!-- BLOC LANGAGE C EXEMPLE 4 -->
-    <div class="sujet">Traduction en C</div>
+    <div class="sujet font3">Traduction en C</div>
     <div class="sujet_algo">
         <pre>
             <code class="prettyprint">
@@ -540,9 +541,9 @@ return 0;
     </div>
     
 <!-- BLOC LANGAGE PHP EXEMPLE 4 -->
-<div class="sujet">Demo en PHP</div>
+<div class="sujet font3">Demo en PHP</div>
 <form method="post">
-        Nombre entier : <input type="text" name="nb"> 
+<span class="font_label">Nombre entier : </span>        <input type="text" name="nb"> 
             <input type="submit" name="tester" value ="Tester"> 
         </form> 
         <?php 
@@ -577,12 +578,12 @@ return 0;
 
 <!-- BLOC EXEMPLE 5 -->
 <div class="illustration">
-    <div class="sujet">
-        <span class="italic">Exercice 5:</span> Exo  : modifier l'exo 4 en ajoutant la recherche des nombres parfaits compris entre deux limites entières saisies par l'utilisateur.  
+    <div class="sujet font3">
+        <span class="italic font_h1">Exercice 5:</span> &nbsp;Modifier l'exo 4 en ajoutant la recherche des nombres parfaits compris entre deux limites entières saisies par l'utilisateur.  
 
     </div>
     <!-- BLOC ALGO EXEMPLE 5 -->
-    <div class="sujet">Algorithme</div>
+    <div class="sujet font3">Algorithme</div>
     <div class="sujet_algo">
         <pre>
             <code class="prettyprint">
@@ -609,7 +610,7 @@ FIn parfait
         </pre>
     </div>  
     <!-- BLOC LANGAGE C EXEMPLE 5 -->
-    <div class="sujet">Traduction en C</div>
+    <div class="sujet font3">Traduction en C</div>
     <div class="sujet_algo">
         <pre>
             <code class="prettyprint">
@@ -648,10 +649,10 @@ return 0;
     </div>
     
 <!-- BLOC LANGAGE PHP EXEMPLE 5 -->
-<div class="sujet">Demo en PHP</div>
+<div class="sujet font3">Demo en PHP</div>
 <form method="post">
-Limite 1 : <input type="text" name="nb1"> <br/> 
-Limite 2 : <input type="text" name="nb2"> <br/> 
+<span class="font_label">Limite 1 : </span> <input type="text" name="nb1"> <br/> 
+<span class="font_label">Limite 2 : </span> <input type="text" name="nb2"> <br/> 
 <input type="submit" name="rechercher" value ="Rechercher"> 
 </form> 
 <?php 
@@ -686,12 +687,12 @@ if (isset($_POST['rechercher']))
 
 <!-- BLOC EXEMPLE 6 -->
 <div class="illustration">
-    <div class="sujet">
-        <span class="italic">Exercice 6:</span> Exo  : Ecrire un algo / C / PHP qui permet de saisir dix notes des étudiants et affiche la moyenne des notes, la note max et la note min des notes saisies.
+    <div class="sujet font3">
+        <span class="italic font_h1">Exercice 6:</span> Ecrire un algo / C / PHP qui permet de saisir dix notes des étudiants et affiche la moyenne des notes, la note max et la note min des notes saisies.
 
     </div>
     <!-- BLOC ALGO EXEMPLE 6 -->
-    <div class="sujet">Algorithme</div>
+    <div class="sujet font3 ">Algorithme</div>
     <div class="sujet_algo">
         <pre>
             <code class="prettyprint">
@@ -725,7 +726,7 @@ Fin notes
         </pre>
     </div>  
     <!-- BLOC LANGAGE C EXEMPLE 6 -->
-    <div class="sujet">Traduction en C</div>
+    <div class="sujet font3">Traduction en C</div>
     <div class="sujet_algo">
         <pre>
             <code class="prettyprint">
@@ -764,18 +765,18 @@ return 0;
     </div>
     
 <!-- BLOC LANGAGE PHP EXEMPLE 6 -->
-<div class="sujet">Demo en PHP</div>
+<div class="sujet font3">Demo en PHP</div>
 <form method="post">
-Note 1 : <input type="text" name="note_1"> <br/>
-Note 2 : <input type="text" name="note_2"> <br/> 
-Note 3 : <input type="text" name="note_3"> <br/> 
-Note 4 : <input type="text" name="note_4"> <br/> 
-Note 5 : <input type="text" name="note_5"> <br/> 
-Note 6 : <input type="text" name="note_6"> <br/> 
-Note 7 : <input type="text" name="note_7"> <br/> 
-Note 8 : <input type="text" name="note_8"> <br/> 
-Note 9 : <input type="text" name="note_9"> <br/> 
-Note 10 : <input type="text" name="note_10"> <br/>  
+<span class="font_label">Note 1 : </span><input type="text" name="note_1"> <br/>
+<span class="font_label">Note 2 : </span><input type="text" name="note_2"> <br/> 
+<span class="font_label">Note 3 : </span><input type="text" name="note_3"> <br/> 
+<span class="font_label">Note 4 : </span><input type="text" name="note_4"> <br/> 
+<span class="font_label">Note 5 : </span><input type="text" name="note_5"> <br/> 
+<span class="font_label">Note 6 : </span><input type="text" name="note_6"> <br/> 
+<span class="font_label">Note 7 : </span><input type="text" name="note_7"> <br/> 
+<span class="font_label">Note 8 : </span><input type="text" name="note_8"> <br/> 
+<span class="font_label">Note 9 : </span><input type="text" name="note_9"> <br/> 
+<span class="font_label">Note 10 : </span><input type="text" name="note_10"> <br/>  
 
 <input type="submit" name="calculer_note" value ="Calculer"> 
 </form> 
@@ -821,9 +822,11 @@ if (isset($_POST['calculer_note']))
 
 ?>
 </div>
+</div>
+
 
 <center>
-    <button class="click_haut" onclick="scrollToTop()"> 
+    <button class="click_haut " onclick="scrollToTop()"> 
     Cliquez pour faire défiler vers le haut
     </button> 
 </center>
