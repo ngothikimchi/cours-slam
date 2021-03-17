@@ -312,7 +312,7 @@ background-color: #020209 !important; }
     font-family: 'Pacifico', cursive;
 }
 .font3{
-    font-family: 'Taviraj', serif;
+    font-family: 'Rouge Script', cursive;
 }
 /* HEADER */
 
@@ -371,4 +371,9 @@ nav ul li a:hover {
 .font_label{
     font-family:'Inconsolata', monospace; ;
     font-size: 15px;
+}
+
+
+.created-by{
+    margin-right: 2em;
 }

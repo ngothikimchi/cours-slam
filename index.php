@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="color_header">               
-        <img class="taille_logo" src="logo.png">                        
+        <img class="taille_logo" src="logo.png">        
         <nav>
             <ul>
                 <li>
@@ -24,9 +24,9 @@
                 <li>
                 <a href="index.php?page=3">Les boucles</a>
                 </li>
-               
             </ul>
-        </nav>        
+        </nav>
+        <h4 class="created-by">Dévéloppé par <a href="http://kimchi-bts.fr">kimchi-bts.fr</a></h4>
     </header>
 <center>
     <h1 class="font_h1">Bienvenue à notre site E-Enseignement Algo / Langage C / Developpement PHP </h1>
@@ -39,7 +39,7 @@
     }
     else 
     {
-        $page = 1;
+        $page = 2;
     }
 
     switch ($page)
